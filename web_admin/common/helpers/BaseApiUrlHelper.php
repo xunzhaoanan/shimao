@@ -1015,6 +1015,11 @@ class BaseApiUrlHelper
 		'sms-log-tenpay-notice' => '/sms/log-tenpay-notice',
         'sms-pay-callback' => '/sms/pay-callback',
         'sms-pay-callback-wx' => '/sms/pay-callback-wx',
+
+       #   世贸项目 ------------------------------------------------------------------------------------------------------------------------------
+       ##test##
+        'test' => '/site/index',
+
     ];
 
 }

@@ -41,7 +41,7 @@ class BaseModel extends Model
         $this->_data = null;
         $this->errorMsg = null;
         if($filter) self::filterNullValue($params);
-        $apiData = BaseApiHelper::sync($urlKey,$params);
+        $apiData = BaseApiHelper::sync_test($urlKey,$params);
         if (substr($apiData, 0, 3) == pack("CCC", 0xEF, 0xBB, 0xBF)) {
             $apiData = substr($apiData, 3);
         }

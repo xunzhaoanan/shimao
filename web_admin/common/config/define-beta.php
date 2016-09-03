@@ -19,3 +19,7 @@ defined('WEIXINID') or define('WEIXINID', 'weiyukezhan');
 
 //开放平台
 defined('OPEN_HOST') or define('OPEN_HOST','http://betaopenapi.vikduo.com');
+
+//定义接口秘钥
+defined('MD5KEY') or define('MD5KEY','e4e723f614711651d80b44af9ef68f9b');
+defined('AUTHORTYPE') or define('AUTHORTYPE',1);

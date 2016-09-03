@@ -27,6 +27,8 @@ class SiteController extends Controller
                 $postData = json_decode($postData,true);
                 $keyData['authorType'] = $postData['AuthorType'];
                 $keyData['appSign'] = $postData['AppSign'];
+                unset($postData['AuthorType']);
+                unset($postData['AppSign']);
                 //提前拼接完顺序
                 array_multisort($postData);
                 $keyData['sequence'] = implode('',$postData);
@@ -44,8 +46,11 @@ class SiteController extends Controller
         if($this->illegal === false){
             throw new BusinessException(Yii::t('exception', '10001'), 10001);die;
         }
-
         return true;
+    }
+
+    public function actionIndex($action){
+        echo 123;die();
     }
 
     /**
