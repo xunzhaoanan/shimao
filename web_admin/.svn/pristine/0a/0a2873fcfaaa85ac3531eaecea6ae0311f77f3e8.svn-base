@@ -1,0 +1,68 @@
+<!--图片导航-->
+<div class="image-navset control-com padding10 clearfix">
+  <div class="clearfix">
+    <h4 class="app-m-title">图片导航</h4>
+
+    <div class="hr"></div>
+
+    <div class="form-group clearfix">
+      <div class="col-sm-3 control-label">文字颜色：</div>
+      <div class="col-sm-8">
+        <div class="input-group">
+          <input type="text"
+                style="background-color: {{module.color}} !important; color: transparent !important;"
+                 readonly id="color" class="form-control" ng-model="module.color">
+          <div class="input-group-addon no-border no-background no-padding">
+            <button class="btn btn-xs" ng-click="module.color='#FFFFFF';">重置</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <ng-form novalidate name="myform">
+    <div class="form-group clearfix" ng-repeat="image in module.imageList track by $index">
+      <div class="items clearfix">
+        <div class="image-m-upload">
+          <i ng-if="!image.file_cdn_path" class="add-icon icon-plus-circle success"
+             ng-click="showImageList($index)"></i>
+            <p class="imgtips" >图片建议尺寸:320x320</p>  
+          <div class="img-box" ng-if="image.file_cdn_path">
+            <img ng-src="{{image.file_cdn_path}}" class="thumb-image"/>
+            <a class="upload-img" ng-click="showImageList($index)">
+              重新上传
+            </a>
+          </div>
+          <p class="width100 red font-size12px"
+             ng-if="!image.file_cdn_path && module.validation">
+            必填</p>
+        </div>
+        <div class="control-box">
+          <div class="form-group">
+            <div class="col-sm-2 control-label">文字：</div>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" ng-model="image.text"
+                     placeholder="不能超过10个字符或5个汉字" name="text{{$index}}"
+                     ng-change="checkText(image)">
+
+              <p class="width100 margin-top5 red font-size12px margin-bottom5"
+                 ng-if="image.text && !image.textValid && module.validation">
+                不能超过10个字符或5个汉字</p>
+
+            </div>
+          </div>
+          <div class="form-group ">
+            <div class="col-sm-2 control-label">链接：</div>
+            <div class="col-sm-10">
+              <page-link link="image.link"></page-link>
+              <p class="width100 margin-top5 red font-size12px margin-bottom5"
+                 ng-if="!image.link && module.validation">
+                必填</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-form>
+</div>

@@ -1,0 +1,22 @@
+<div class="custom-combox custom-imagenavset clearfix">
+  <div class="custom-imagenav">
+    <div class="default-goods-items" ng-if="module.editLength===0">
+        <img src="/ace/images/page/imagenav.png" class="full-screen"/>
+    </div>
+
+    <div class="goods-items" ng-repeat="image in module.imageList track by $index"
+         ng-if="module.editLength>0">
+      <a ng-href="{{image.link.isOut?'':module.prefix}}{{image.link.url}}">
+        <div class="navimg-box">
+          <img ng-src="{{image.file_cdn_path}}" class="full-screen"/>
+        </div>
+	    <div class="text-box text-center" style="color: {{module.color}} !important;"
+	           ng-if="image.text" ng-bind="image.text">
+	    </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+

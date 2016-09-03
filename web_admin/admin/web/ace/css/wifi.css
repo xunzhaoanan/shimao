@@ -1,0 +1,18 @@
+
+
+
+
+ .wei_wifiimg{width:225px; height:350px; overflow:hidden; border:1px solid #d5d5d5;}
+ .btn_box{ margin-top:20px;}
+.weiwifi_cont_r{ position:absolute; width:472px; right:0; top:0; background:#f6f7f9; height:100%; overflow:hidden; overflow-y:auto; border-left:2px solid #e2e2e2;}
+.weiwifi_cont_r ul{ padding:10px;}
+.weiwifi_cont_r li{ float:left; width:123px; height:194px; overflow:hidden; border:1px solid #f6f7f9; margin:10px; position:relative;}
+.weiwifi_cont_r li a{transition:all .3s;}
+.weiwifi_cont_r li a:hover{ display:block; outline:2px solid #ccc; }
+.weiwifi_cont_r li span{ display:block;  position:absolute; top: 0; left:0; width:100%; height:100%;background:rgba(0,0,0,.5) url('http://imgcache.vikduo.com/static/e03f1e00b0f631433ea7b2689ee41742.png') center center no-repeat;}
+
+ .btn.cancel{text-shadow: 0 1px 1px #a6a6a6;vertical-align: middle;cursor: pointer;background-color: #a6a6a6;background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a6a6a6), to(#a6a6a6));background-image: linear-gradient(to bottom, #a6a6a6, #a6a6a6);background-repeat: repeat-x;
+    border: 1px solid #a6a6a6;margin-left:10px;}
+.weiwifi_content img {
+    width: 100%;
+}

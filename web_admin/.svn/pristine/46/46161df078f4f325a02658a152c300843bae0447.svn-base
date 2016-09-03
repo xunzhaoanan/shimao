@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body{background:#F6F1EB}
+.d_header nav { background-color:rgba(219,80,15,0.8);border-bottom:1px #DB500F solid}
+.header_region{ background-color:rgba(219,80,15,0.8);border-top:1px #DB500F solid}
+.initial_nav li span,.class_nav li i{ color:#FFF}
+
+.payment_box {background:rgba(255,255,255,0.9) }
+.foot_cart a {color:#666;}
+.d_header nav i,.filter li.filter_cur a{color:#FFF;}
+
+.filter li.filter_cur a{background: #DB500F;}
+
+.goods_show .goods_title h2{color:#DB500F;}
+.d_header nav h1 { color:#FFF }
+.filter a{color:#333}
+.class_nav li a:hover span, .class_nav li a:hover i , .class_nav li a.act i, .class_nav li a.act span{color:#FFF}
+.class_nav li a.act{background: #DB500F;}
+
+.items_defray .items label.select,.ui_sku label.btn_opt{background:#DB500F;border-color: #DB500F;}
+.scroll_top i{color: #FFF;}
+#pagenavi a{background:#FFF;background-color:rgba(255,255,255,0.7);}
+
+
+/*商城*/
+.list_font{ display: none;}
+/*官网*/
+.home_block{
+    margin: 10px;
+    overflow: hidden;
+    padding: 5px;
+    width:150px;
+    margin:auto;
+    margin-left:50px;
+    padding:80px 0 50px 0;
+}
+.home_block .box{
+    color:#666;
+    display:block;
+    background:#fff;
+    line-height:35px;
+    overflow:hidden;
+}
+.home_block li{
+	float:none;
+	width:auto;
+    padding:2px;
+    display:block;
+    text-align:center;
+    -webkit-box-sizing:border-box;
+}
+.home_block .pic{ display:none;}
+.home_block .figure{ display:none;}
+

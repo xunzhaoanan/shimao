@@ -1,0 +1,103 @@
+.mt20 {
+  margin-top: 20px;
+}
+.fl {
+  float: left;
+}
+.mll00 {
+  margin-left: 100px;
+}
+.tmpDiv table {
+  border: 1px solid #ccc;
+}
+
+.tmpDiv table td.main {
+  cursor: pointer;
+}
+.tmpDiv table td {
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+.tmpDiv table td.main {
+  cursor: pointer;
+}
+.tmpDiv img {
+  border: 0px;
+}
+.imgList {
+  position: absolute;
+  bottom: -15px;
+}
+.add_pdt_img {
+  height: 55px;
+}
+-
+.add_pdt_img{  vertical-align: middle;/* width: 70px; */ height: 105px;}
+.add_pdt_img li { width:50px; height:50px; border:1px #dbdbdb solid; border-radius:4px; margin:0 8px 8px 0; float:left; position:relative; }
+.add_pdt_img li a { display:block; text-align:center; font-size:42px; line-height:50px; color:#ccc; }
+.add_pdt_img li a:hover { color:#999; }
+.add_pdt_img li a img { width:50px; height:50px; border:none; border-radius:4px; vertical-align:top; }
+.add_pdt_img li .delete { top: -8px; right: -8px; width: 18px; height: 18px; font-size: 14px; line-height: 16px; border-radius: 9px; background:rgba(153,153,153,0.6); color:#fff; position:absolute; }
+.add_pdt_img li .hide { display:none; }
+.add_pdt_img li .delete:hover { background:#000; }
+.delete, .newdelete {
+  width: 15px;
+  height: 20px;
+  display: inline-block;
+  background: url('http://imgcache.vikduo.com/static/e220b364a58db841453beeec69c1e86e.png') -15px 0;
+  vertical-align: middle;
+}
+.diago {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: none;
+}
+.tmpDiv .btn1 {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+.tmpDiv .btn1 {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+.bigImg
+{
+	height:300px; width: 480px; position: relative
+}
+.borecss{
+  display:inline-block;
+  text-decoration:none;
+  color: #000000;
+}
+.borecss:hover{
+  display:inline-block;
+  text-decoration:none;
+  color: #000000;
+}
+.borecss_img{
+  width: 200px;
+  height: 100px;
+  line-height:100px;
+}
+.borecss_img_160{
+  width: 160px;
+  height: 100px;
+  line-height:100px;
+}
+.borecss_img_400{
+  width: 400px;
+  height: 100px;
+  line-height:90px;
+}
+.borecss_img_580{
+  width: 580px;
+  height: 150px;
+  line-height:150px;
+}

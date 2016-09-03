@@ -1,0 +1,36 @@
+<img src="/ace/images/page/banner_t_02.png" ng-if="!module.adsList.length" class="full-screen">
+
+<ul rn-carousel-auto-slide rn-carousel rn-carousel-locked="isLocked"
+    class="custom-carousel slide clearfix"
+    ng-if="module.displayType==='1' && module.adsList.length" style="width: 100%;">
+  <li ng-repeat="ads in module.adsList track by $index">
+    <div class="layer">
+      <a ng-href="{{ads.link.isOut?'':module.prefix}}{{ads.link.url}}">
+        <div class="img-box-2">
+          <img ng-src="{{ads.file_cdn_path}}"/>
+
+          <div class="title" ng-if="ads.text" ng-bind="ads.text"></div>
+        </div>
+      </a>
+    </div>
+  </li>
+  <div class="slide_navlist" rn-carousel-indicators ng-if="module.adsList.length > 1"
+       slides="module.adsList" rn-carousel-index="carouselIndex"></div>
+  <div style="padding-top: 50%;"></div>
+</ul>
+
+<div class="custom-image" style="display: block;"
+     ng-if="module.displayType==='2' && module.adsList.length">
+  <ul style="width: 100%;">
+    <li ng-repeat="ads in module.adsList track by $index"
+        ng-class="{'active':$index===0}" style="overflow: hidden;">
+      <a ng-href="{{ads.link.isOut?'':module.prefix}}{{ads.link.url}}">
+        <div class="img-box-2" style="background-color: #fff; position: relative;">
+          <img ng-src="{{ads.file_cdn_path}}" style="position: absolute; left: 0; top: 0;"/>
+
+          <div class="title" ng-if="ads.text" ng-bind="ads.text"></div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

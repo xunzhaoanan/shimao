@@ -1,0 +1,32 @@
+<?php
+/**
+ * Author: MaChenghang
+ * Date: 2015/6/15
+ * Time: 14:36:16
+ */
+
+namespace common\forms\wxmaterial;
+
+use common\forms\BaseForm;
+
+/**
+ * Class ShopForm
+ * @package common\forms
+ */
+class NewsWshEditAjaxRulesForm extends BaseForm
+{
+    public $title;
+    public $description;
+    public $cdn_path;
+    public $url;
+    public $link_param;
+    public $link_type;
+
+    public function rules()
+    {
+        return [
+            [['title','description','cdn_path','link_param','link_type'], 'required'],
+            ['url','safe']
+        ];
+    }
+}

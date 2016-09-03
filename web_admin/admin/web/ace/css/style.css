@@ -1,0 +1,197 @@
+.jPaginate{
+    height:34px;
+    position:absolute;
+    color:#a5a5a5;
+    font-size:small;   
+	margin:0 auto;
+}
+.jPaginate a{
+	min-width:31px;
+    line-height:27px;
+    height:32px;
+    cursor:pointer;
+    padding:2px 5px;
+    margin:2px;
+    float:left;
+	text-decoration:none;
+}
+.jPag-control-back{
+	position:relative;
+	float:left;
+}
+.jPag-control-front{
+	position:relative;
+	float:left;
+}
+.jPaginate span{
+    cursor:pointer;
+}
+ul.jPag-pages{
+    float:left;
+    list-style-type:none;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+}
+ul.jPag-pages li{
+    display:inline;
+    float:left;
+    padding:0px;
+    margin:0px;
+}
+ul.jPag-pages li a{
+    float:left;
+    padding:2px 5px;
+}
+span.jPag-current{
+	min-width:31px;
+    cursor:default;
+    font-weight:normal;
+    line-height:27px;
+    height:32px;
+    padding:2px 5px;
+    margin:2px;
+    float:left;
+}
+ul.jPag-pages li span.jPag-previous,
+ul.jPag-pages li span.jPag-next,
+span.jPag-sprevious,
+span.jPag-snext,
+ul.jPag-pages li span.jPag-previous-img,
+ul.jPag-pages li span.jPag-next-img,
+span.jPag-sprevious-img,
+span.jPag-snext-img{
+    height:22px;
+    margin:2px;
+    float:left;
+    line-height:18px;
+}
+
+ul.jPag-pages li span.jPag-previous,
+ul.jPag-pages li span.jPag-previous-img{
+    margin:2px 0px 2px 2px;
+    font-size:12px;
+    font-weight:bold;
+        width:10px;
+
+}
+ul.jPag-pages li span.jPag-next,
+ul.jPag-pages li span.jPag-next-img{
+    margin:2px 2px 2px 0px;
+    font-size:12px;
+    font-weight:bold;
+    width:10px;
+}
+span.jPag-sprevious,
+span.jPag-sprevious-img{
+    margin:2px 3px 2px 0px;
+    font-size:24px;
+    width:25px;
+	height:25px;
+	line-height:27px;
+    text-align:right;
+}
+span.jPag-snext,
+span.jPag-snext-img{
+    margin:2px -2px 2px 5px;
+    font-size:24px;
+    width:25px;
+	height:25px;
+	line-height:27px;
+    text-align:left;
+}
+ul.jPag-pages li span.jPag-previous-img{
+    background:transparent url(../images/previous.png) no-repeat center right;
+            }
+ul.jPag-pages li span.jPag-next-img{
+    background:transparent url(../images/next.png) no-repeat center left;
+            }
+span.jPag-sprevious-img{
+    background:transparent url(../images/sprevious.png) no-repeat center right;
+            }
+span.jPag-snext-img{
+    background:transparent url(../images/snext.png) no-repeat center left;
+            }
+ .part_bg {
+  box-shadow: 0 0 6px #ccc;
+  border-radius: 2px;
+  background: #fff;
+  line-height: 30px;
+  position: relative;
+}
+.qr {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+ .qr img {
+  float: left;
+  width: 200px;
+}
+.qr span {
+  padding-left: 220px;
+  display: block;
+}
+ .qr strong {
+   display: block;
+  padding-bottom: 1px;
+  padding-top: 10px;
+}
+
+/**邮费模版城市选择**/
+.distribution{ max-height:280px; overflow: hidden; overflow-y:auto; }
+.distribution ul{ margin:0; padding: 0;}
+.distribution li{width: 100%; height: 26px; line-height: 26px; text-align: center; border-bottom: 1px solid #ccc; }
+.distribution li:last-child{ border-bottom: none;}
+.distribution li a{ display: block; text-decoration: none; color: #333;}
+.distribution li a:hover{background:#eee;position: relative;}
+.distribution li a:hover:after{  border-color: #eee #999 #999 #eee;  border-style: solid;  boder-width: 0 1px 1px 0;  content: "";  display: inline-block;  height: 6px;  transform: rotate(-45deg);  vertical-align: middle;  width: 6px;  display: block;  left: 170px; position: absolute;  right: 0px;
+  z-index: 10;  top: 14px;}
+
+
+
+  /**硬件**/
+.select_setinfo_list li .setinfo_img_bg {
+  width: 230px;
+  height: 75px;
+  overflow: hidden;
+  background: #f7f7ff;
+  padding: 10px;
+}
+.select_setinfo_list li .setinfo_img {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.select_setinfo_list li .setinfo_img_bg img {
+  width: 100%;
+}
+.select_setinfo_list li .zhushou {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #212121;
+}
+.select_setinfo_list li .setinfo_del {
+  margin-left: 10px;
+}
+.select_setinfo_list li .guanzhu {
+  color: #999;
+  font-size: 12px;
+}
+.select_setinfo_list li .setinfo_note {
+  margin-top: 10px;
+}
+.fl {
+  float: left;
+}
+.setinfo_img_bg, .setinfo_del {
+  float: left;
+}
+.select_setinfo_list li {
+  padding: 10px;
+  width: 290px;
+  margin: 0 16px 20px 0;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}

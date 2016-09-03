@@ -1,0 +1,1360 @@
+html, body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dt, dd, form, fieldset, legend, input, textarea, select, div {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+  text-indent: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  line-height: 1;
+  background: #f0f0f0;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+input, textarea {
+  outline: 0;
+  resize: none;
+}
+
+i, em {
+  font-style: normal;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " "
+}
+
+.clearfix:after {
+  clear: both
+}
+
+.shop-good .btn-primary.active {
+  background-color: #d15b47 !important;
+  border-color: #d15b47;
+}
+
+.lbl:before {
+  margin-top: -5px;
+}
+
+.mall-page-manage {
+  width: 850px;
+  margin: auto;
+  padding: 70px 0 125px;
+  margin-bottom: 50px;
+}
+
+.app-container {
+  width: 348px;
+  border-radius: 50px;
+  border: 1px solid #e5e5e5;
+  float: left;
+  position: relative;
+}
+
+.app-container .app-header {
+  height: 70px;
+  background: url('/ace/images/page/iphone_head.png') no-repeat center center
+}
+
+.app-container .app-body {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 11px;
+  min-height: 568px;
+  border: 1px solid #c5c5c5;
+  background: #f0f0f0
+}
+
+.app-container .app-foot {
+  position: relative;
+  margin: 5px 0;
+  height: 60px;
+  background: url('/ace/images/page/iphone_foot.png') no-repeat center center
+}
+
+.app-container .app-field {
+  margin: 0;
+  cursor: pointer;
+  padding: 18px 60px 0 60px;
+  font-size: 16px;
+  line-height: 46px;
+  min-height: 64px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  background: url("/ace/images/page/titlebar.png") no-repeat;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.app-setting-panel {
+  position: relative;
+  float: left;
+  width: 480px;
+  padding-bottom: 20px;
+  font-size: 14px
+}
+
+.app-setting-panel > div {
+  margin: 134px 0 20px 20px;
+  position: relative
+}
+
+.app-setting-panel > div form {
+  padding-top: 0px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #c5c5c5;
+}
+
+.app-setting-panel .delGoods {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 9px;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(153, 153, 153, 0.6)
+}
+
+.app-setting-panel .delGoods:hover {
+  background-color: #3C8FD9;
+  text-decoration: none
+}
+
+.app-setting-panel .arrow, .app-setting-panel .arrow:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 10px 8px 0;
+  border-color: transparent #c5c5c5 transparent transparent;
+  position: absolute;
+  left: -10px;
+  top: 14px
+}
+
+.app-setting-panel .arrow:after {
+  content: "";
+  border-right-color: #fff;
+  left: 2px;
+  top: -8px
+}
+
+.app-components {
+  position: absolute;
+  left: 0;
+  bottom: auto;
+  margin: 10px 0 80px;
+  padding: 0 10px 4px 10px;
+  border: 1px solid #ddd;
+  background-color: #FFFFFF
+}
+
+.app-components .app-component {
+  width: 20%;
+  float: left;
+  padding: 5px;
+  text-align: center
+}
+
+.app-components .arrow, .app-components .arrow:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #c5c5c5 transparent;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  margin-left: -10px
+}
+
+.app-components .arrow:after {
+  content: "";
+  border-bottom-color: #FFFFFF;
+  top: -9px;
+}
+
+.app-components .app-component a {
+  background-color: #fff;
+  font-size: 12px;
+  display: table-cell;
+  width: 60px;
+  height: 50px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  line-height: 14px;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  color: #08c;
+}
+
+.app-components .app-component a:hover {
+  color: #f00
+}
+
+.p-2 {
+  padding: 2px !important
+}
+
+.p-4 {
+  padding: 4px !important
+}
+
+.full-screen {
+  width: 100%;
+  height: auto;
+}
+
+.img-box {
+  display: block;
+  width: 100%;
+  position: relative;
+  float: none;
+}
+
+.navimg-box {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  float: none;
+  vertical-align: top;
+}
+
+.img-box:after, .navimg-box:after {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  content: '';
+  position: relative;
+  float: none;
+
+}
+
+.img-box-2:after {
+  display: block;
+  padding-top: 50%;
+  content: '';
+}
+
+.img-box > img, .navimg-box img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.app-module {
+  cursor: move;
+  position: relative;
+  padding-bottom: 0;
+  margin: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*.app-module .module-content{padding:0;}*/
+.app-module .module-tool {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px dashed rgba(255, 0, 0, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 200
+}
+
+.app-module .module-tool .actions-box {
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  width: 100%;
+  font-size: 12px
+}
+
+.app-module .module-tool .action {
+  color: #fff;
+  padding: 5px;
+  margin-left: 1px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.app-module .module-tool .action:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*.app-module .goods-panel > div{border:1px solid #e5e5e5;background-color:#fff}
+.app-module .goods-panel > div > div{padding:5px 0}*/
+
+/*.app-module .goods-panel .price{font-weight:bold;color:#f60;padding:5px;font-size:15px;line-height:14px}*/
+
+/*.app-module .goods-panel .name{font-size:14px;font-weight:bold;text-overflow:ellipsis;white-space:nowrap;padding:5px;line-height:14px}*/
+@media (min-width: 768px) {
+  .modal-md {
+    width: 640px;
+    margin: 70px auto
+  }
+}
+
+.app-module .goods-table {
+  table-layout: fixed;
+}
+
+.app-module .goods-table td {
+  padding: 5px 10px !important;
+  line-height: 26px !important
+}
+
+.app-module .goods-table .btn.active:after {
+  border: none;
+}
+
+.app-module .app-m-title {
+  color: #669fc7;
+  margin: 0 10px 12px;
+}
+
+.btn.active:after {
+  border-bottom: none;
+}
+
+/*======商城后台编辑=======*/
+.app-setting-panel .actions {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.actions .close-modal {
+  position: static;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.close-modal {
+  position: absolute;
+  z-index: 2;
+  top: -9px;
+  right: -9px;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(153, 153, 153, 0.6);
+  border-radius: 10px;
+}
+
+.close-modal:hover {
+  color: #fff;
+  background: #3e94e1;
+}
+
+.app-setting-panel .control-box {
+  float: left;
+  width: 280px;
+  margin-left: 10px;
+}
+
+.app-setting-panel .caret {
+  border-top: 4px solid #428BCA;
+}
+
+/*图片广告编辑*/
+.control-com .items {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  margin: 0 10px 15px 10px;
+  padding: 15px;
+  background: #f9f9f9;
+  zoom: 1;
+  clear: both;
+}
+
+.control-com .items:before, .control-com .items:after {
+  display: table;
+  content: " " clear : both
+}
+
+.control-com .items .img-box {
+  width: 120px;
+  position: relative;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  float: left;
+}
+
+.control-com .items .img-box .thumb-image {
+  min-height: 120px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all .5s;
+}
+
+.control-com .items .img-box .thumb-image:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+.control-com .items .upload-img {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 100;
+}
+
+.control-com .items .upload-img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.control-com .add-option {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  margin: 0px 10px;
+  background: #fff;
+  zoom: 1;
+  border-radius: 3px;
+  display: block;
+  line-height: 45px;
+  padding: 0 10px;
+  color: #07d;
+  cursor: pointer;
+}
+
+.control-com .add-option:hover {
+  background: #f9f9f9;
+}
+
+/*富文本编辑*/
+.richText_edit .edui-editor-iframeholder {
+  height: 350px;
+}
+
+.richText_edit .control-label {
+  width: 87px;
+  cursor: default;
+}
+
+.richText_edit .colorbox {
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+/*商品编辑*/
+.add-goods-box .add-goods .add-btn {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.add-goods-box .goods-item {
+  float: left;
+  margin: 0 10px 10px 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: relative;
+}
+
+/*图片导航编辑*/
+.image-navset .items {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  margin: 0px 10px 15px 10px;
+  padding: 15px 15px 30px;
+  background: #f9f9f9;
+  zoom: 1;
+  clear: both;
+}
+
+.image-navset .image-m-upload {
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 120px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.image-navset .image-m-upload .add-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 120px;
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
+}
+.image-navset .imgtips{ width:140px; font-size:10px; margin:5px 0 5px -8px; color:#bbb;}
+
+/*文本链接编辑*/
+.text-navset .text-items {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  margin: 0px 0px 15px;
+  padding: 15px;
+  background: #f9f9f9;
+  zoom: 1;
+  clear: both;
+}
+
+.text-navset .add-option {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  margin: 0px 10px;
+  background: #fff;
+  zoom: 1;
+  border-radius: 3px;
+  display: block;
+  line-height: 45px;
+  padding: 0 10px;
+  color: #07d;
+  cursor: pointer;
+}
+
+.text-navset .add-option:hover {
+  background: #f9f9f9;
+}
+
+/*空白编辑*/
+.noUi-horizontal .noUi-handle {
+  border-radius: 50px;
+}
+
+/*链接编辑*/
+.dropdown .label.ng-binding {
+  max-width: 10em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*popover*/
+.popover.bottom {
+  margin-top: 5px;
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  max-width: none;
+}
+
+.popover.bottom .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #c5c5c5 transparent;
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  margin-left: -10px;
+}
+
+.popover.bottom .arrow:after {
+  content: "";
+  border-bottom-color: #FFFFFF;
+  top: -9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.popover.right .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent transparent #c5c5c5;
+  position: absolute;
+  right: 0%;
+  top: 28px;
+  left: auto;
+  margin-right: -15px;
+
+}
+
+.popover.right .arrow:after {
+  content: "";
+  border-bottom-color: #FFFFFF;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  right: 0;
+  left: auto;
+  margin-right: -8px;
+}
+
+.popover .arrow:after {
+  border-width: 10px;
+  content: "";
+
+}
+
+.popover .arrow, .popover .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.popover-inner {
+  width: 312px;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.popover-content {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  background-clip: padding-box;
+  border: 1px solid #c5c5c5;
+}
+
+.popover-link input.link-placeholder {
+  font-size: 12px;
+  width: 200px;
+}
+
+.colorpicker-element {
+  cursor: default !important;
+}
+
+#color {
+  width: 100%;
+  height: 24px;
+}
+
+/*========商城首页==========*/
+.app-module .custom-combox {
+  position: relative;
+  padding: 5px 10px;
+  min-height: 30px;
+}
+
+/*富文本*/
+.app-module .custom-richtext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  overflow: hidden;
+  text-align: left;
+  word-wrap: break-word;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.app-module .custom-richtext img {
+  width: auto !important;
+}
+
+/*自定义导航*/
+.app-module .custom-nav {
+  line-height: 40px;
+  padding: 0 12px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.app-module .custom-nav .pull-right {
+  line-height: 40px;
+}
+
+/*搜索*/
+.app-module .custom-search {
+  position: relative;
+  margin: auto;
+}
+
+.app-module .custom-search .icon-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 42px;
+  text-align: center;
+  width: 42px;
+  font-size: 0;
+  background: url('/ace/images/page/search-icon.png') center center no-repeat;
+  background-size: 23px;
+  border: none;
+  outline: none;
+"
+}
+
+.app-module .custom-search .custom-search-input {
+  margin: 0;
+  padding: 0 10px 0 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 1px !important;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  outline: none;
+  font-size: 14px;
+  background-color: #fff !important;
+  color: #999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+  cursor: default;
+}
+
+/*公告*/
+.app-module .custom-notice {
+  width: 100%;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  position: relative;
+  line-height: 44px;
+  padding: 0 8px 0 42px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.app-module .custom-notice .icon-notice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 42px;
+  text-align: center;
+  width: 42px;
+  font-size: 0;
+  background: url('/ace/images/page/notice.png') center center no-repeat;
+  background-size: 23px;
+  border: none;
+  outline: none;
+}
+
+.app-module .custom-notice .noticeText {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 42px;
+  width: calc(100% - 50px);
+  width: -webkit-calc(100% - 50px);
+  width: -moz-calc(100% - 50px);
+  width: -ms-calc(100% - 50px);
+  width: -o-calc(100% - 50px);
+}
+
+/*图片导航*/
+.app-module .custom-imagenav {
+  width: 100%;
+  position: relative;
+  padding: 0 3%;
+}
+
+.app-module .custom-imagenav .goods-items {
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.app-module .custom-imagenav .goods-items:last-child {
+  margin-right: 0;
+}
+
+.app-module .custom-imagenav .goods-items a {
+  display: block;
+}
+
+.app-module .custom-imagenav .images-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-module .custom-imagenav .text-box {
+  margin-top: 7px;
+  color: #464646;
+  font-size: 12px;
+}
+
+/*进入店铺*/
+.app-module .custom-shop {
+  position: relative;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  position: relative;
+  line-height: 44px;
+  padding: 0 8px;
+}
+
+.app-module .custom-shop .custom-shop-icon {
+  width: 13px;
+  height: 42px;
+  background: url('/ace/images/page/shop.png') center 17px no-repeat;
+  background-size: 13px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.app-module .custom-shop .custom-shop-name {
+  display: inline-block;
+  max-width: calc(100% - 110px);
+  max-width: -webkit-calc(100% - 110px);
+  max-width: -moz-calc(100% - 110px);
+  max-width: -ms-calc(100% - 110px);
+  vertical-align: top;
+  font-size: 14px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 4px;
+}
+
+.app-module .custom-shop .custom-shop-enter {
+  float: right;
+  vertical-align: top;
+  font-size: 12px;
+  color: #888888;
+}
+
+.app-module .custom-shop .custom-shop-enter .arrow-right {
+  width: 9px;
+  height: 42px;
+  background: url('/ace/images/page/arrow-right.png') center 13px no-repeat;
+  background-size: 9px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*文本链接*/
+.app-module .custom-textnav {
+  position: relative;
+  height: 44px;
+  padding: 0 8px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  line-height: 44px;
+}
+
+.app-module .custom-textnav-enter {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  width: 9px;
+  height: 42px;
+  vertical-align: top;
+  font-size: 12px;
+  color: #888888;
+}
+
+.app-module .custom-textnav-enter .arrow-right {
+  width: 9px;
+  height: 42px;
+  background: url('/ace/images/page/arrow-right.png') center 13px no-repeat;
+  background-size: 9px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.app-module .custom-textlink {
+  position: relative;
+  border: 1px solid #d3d3d3;
+}
+
+.app-module .custom-textlink .items {
+  position: relative;
+  background: #fff;
+  line-height: 44px;
+  padding: 0 12px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  min-height: 44px;
+  color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.app-module .custom-textlink .items .custom-textnav_text {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hr {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  border-top: 1px solid #e3e3e3;
+  margin: 12px 0;
+}
+
+.hr-2, .hr2 {
+  margin: 2px 0;
+}
+
+.app-module .custom-textlink .items:last-child .hr {
+  display: none;
+}
+
+/*商品列表*/
+.app-module .custom-goods {
+  padding: 0px 5px;
+}
+
+.app-module .custom-goods .goods-panel {
+  position: relative;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+}
+
+.app-module .custom-goods .small-goods {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  float: left;
+}
+
+.app-module .custom-goods .small-goods .showprice {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.app-module .custom-goods .big-goods {
+  width: 100%;
+}
+
+.app-module .custom-goods .goods-links {
+  display: block;
+  background: #fff;
+  height: 100%;
+  border: 1px solid #ececec;
+  position: relative;
+}
+
+.app-module .custom-goods .goods-info {
+  position: relative;
+  padding: 0 2px;
+  margin-top: 10px;
+  min-height: 25px;
+}
+
+.app-module .custom-goods .goods-info .name {
+  font-size: 12px;
+  color: #333333;
+  line-height: 18px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.app-module .custom-goods .goods-info .price {
+  font-size: 13px;
+  color: #f7751f;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+}
+.app-module .custom-goods .goods-info .sprice {
+  font-size: 13px;
+  color: #f7751f;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  float: left;
+  max-width:100%;
+}
+.app-module .custom-goods .big-goods .goods-info .sprice {
+  font-size: 13px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  float: none;
+  max-width:100%;
+}
+.app-module .custom-goods .small-goods .goods-info .sprice {
+  font-size: 12px;
+  color: #f7751f;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  float: left;
+  max-width:100%;
+}
+
+.app-module .custom-goods .goods-info .yprice {
+  font-size: 12px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: line-through;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  max-width: 50%;
+}
+.app-module .custom-goods .big-goods .goods-info .yprice {
+  font-size: 11px;
+  color: #CFCFCF;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: line-through;
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  max-width: none;
+}
+.app-module .custom-goods .goods-info .xprice {
+  font-size: 11px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  max-width: 50%;
+}
+.app-module .custom-goods .small-goods .goods-info .xprice {
+  font-size: 11px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  max-width: 50%;
+}
+.app-module .custom-goods .big-goods .goods-info .xprice {
+  font-size: 11px;
+  color: #CFCFCF;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  max-width: none;
+}
+
+.app-module .custom-goods .small-goods .goods-imagesbox {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f8f8;
+  background-size: 6px 6px;
+  max-height: 142px;
+}
+
+.app-module .custom-goods .big-goods .goods-imagesbox {
+  min-height: 100px;
+  text-align: center;
+  overflow: hidden;
+  margin: 4px;
+  position: relative;
+  max-height: 500px;
+}
+
+.custom-goods .big-goods .goods-info {
+  position: absolute;
+  width: calc(100% - 20px);
+  width: -webkit-calc(100% - 20px);
+  width: -moz-calc(100% - 20px);
+  width: -ms-calc(100% - 20px);
+  width: -o-calc(100% - 20px);
+  left: 10px;
+  bottom: 10px;
+  background: #fff7e3 url('/ace/images/page/biggood_linebg.png') repeat;
+  z-index: 2;
+  height: 54px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-goods .big-goods .goods-info .name {
+  width:70%;
+  float: left;
+  padding: 9px 10px 0 10px;
+  height: 43px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 17px;
+  word-break: break-all;
+  word-wrap: break-word;
+
+}
+
+.custom-goods .big-goods .goods-info .price {
+  float: left;
+  width:30%;
+  text-align: left;
+  height: 100%;
+  background: #f43d3b url('/ace/images/page/biggood_linebg2.png') repeat;
+  color: #fff;
+  line-height: 1.5;
+  border: none;
+  padding-left: 2px;
+}
+
+.custom-goods .big-goods .goods-info .yprice {
+  display: block;
+  padding-left: 2px;
+  color: #CFCFCF;
+}
+
+/*图片轮播*/
+.app-module .custom-carousel {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-module .custom-carousel .slide_navlist {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.app-module .custom-carousel .rn-carousel-indicator{ padding: 8px;}
+.app-module .custom-carousel .slide_h {
+  padding-top: 100%;
+}
+
+div.rn-carousel-indicator span {
+  font-size: 20px;
+}
+
+/*单图显示*/
+.app-module .custom-image {
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.app-module .custom-image ul {
+  margin: 0;
+  padding: 0;
+}
+
+.app-module .custom-image li {
+  position: relative;
+  min-height: 40px;
+}
+
+.app-module .custom-carousel .title, .custom-image .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  z-index: 10;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-module .custom-image .img {
+  max-width: 100%;
+}
+
+/*辅助线*/
+.app-module .custom-hr {
+  height: 30px;
+  position: relative;
+}
+
+.app-module .custom-hr .line {
+  border: 0 none;
+  border-top: 1px dashed #bbb;
+  margin: auto;
+  padding: 0;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*预览二维码*/
+.app-qrcode {
+  float: left;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  margin: 200px 60px 20px;
+  overflow: hidden;
+}
+
+.app-qrcode .shop-detail {
+  padding: 10px 0;
+  color: #fff;
+  background-color: #428bca;
+  font-size: 12px;
+  border-bottom: 1px solid #428bca;
+  word-break: break-all;
+}
+
+.app-qrcode .weixin-title {
+  padding: 10px 10px 0;
+}
+
+.colorpicker-2x .colorpicker-saturation {
+  width: 200px;
+  height: 200px;
+}
+
+.colorpicker-2x .colorpicker-hue,
+.colorpicker-2x .colorpicker-alpha {
+  width: 30px;
+  height: 200px;
+}
+
+.colorpicker-2x .colorpicker-color,
+.colorpicker-2x .colorpicker-color div {
+  height: 30px;
+}
+
+richtext-module table {
+  width: 100%;
+  table-layout: auto;
+  margin-bottom: 12px;
+}
+
+richtext-module table td {
+  border: 1px solid #ddd;
+}
+
+.hover-appimg{position: absolute; bottom: 55px; left: 5px; width: 350px;  background-color: #f0f0f0; z-index: 1000; display: none; border: 1px solid #ddd;}
+.hover-appimg img{ max-width:100%; }
+

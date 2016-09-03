@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.shopping {
+  width: 740px;
+  margin: 20px auto;
+  position: 0 25px;
+  text-align: left;
+}
+
+.shopping h1 {
+  font-size: 21px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 25px;
+}
+
+.shopping h2 {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.shopping .order_number {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.shopping .order_number span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.shopping .order_number em {
+  margin-right: 10px;
+}
+
+.shopping .info {
+  padding: 10px 20px;
+  line-height: 25px;
+  border: 1px solid #999;
+}
+
+.shopping .info span {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.shopping .info em {
+  margin-right: 10px;
+}
+
+.shopping .table {
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+  border-left: 1px solid #999;
+}
+
+.shopping .table th, .shopping .table td {
+  text-align: center;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #999;
+  padding: 6px 8px;
+}
+
+.shopping .table th {
+  font-weight: normal;
+}
+
+.shopping .statistics span {
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+
+.shopping .statistics span:last-child {
+  text-align: right;
+}
+
+.shopping em {
+  font-style: normal;
+}
+
+@media print {
+  .shopping {
+    width: 740px;
+    margin: 20px auto;
+    position: 0 25px;
+    text-align: left;
+  }
+
+  .shopping h1 {
+    font-size: 21px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .shopping h2 {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .shopping .order_number {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .shopping .order_number span {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .shopping .order_number em {
+    margin-right: 10px;
+  }
+
+  .shopping .info {
+    padding: 10px 20px;
+    line-height: 25px;
+    border: 1px solid #999;
+  }
+
+  .shopping .info span {
+    display: inline-block;
+    margin-right: 50px;
+  }
+
+  .shopping .info em {
+    margin-right: 10px;
+  }
+
+  .shopping .table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+    border-left: 1px solid #999;
+  }
+
+  .shopping .table th, .shopping .table td {
+    text-align: center;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #999;
+    padding: 6px 8px;
+  }
+
+  .shopping .table th {
+    font-weight: normal;
+  }
+
+  .shopping .statistics span {
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+  }
+
+  .shopping .statistics span:last-child {
+    text-align: right;
+  }
+
+  .shopping em {
+    font-style: normal;
+  }
+}

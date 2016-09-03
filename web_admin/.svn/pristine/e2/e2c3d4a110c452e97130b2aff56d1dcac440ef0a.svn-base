@@ -1,0 +1,88 @@
+<!--图片广告设置-->
+<div class="image-adsboxset control-com padding10 clearfix">
+
+  <div class="clearfix">
+    <h4 class="app-m-title">图片广告设置</h4>
+
+    <div class="hr"></div>
+  </div>
+  <div class="form-group clearfix">
+    <label class="col-sm-3 control-label">显示方式：</label>
+
+    <div class="col-sm-8">
+      <div class="inline">
+        <div class="radio">
+          <label>
+            <input type="radio" class="ace" ng-model="module.displayType" name="displayType"
+                   value="1"><span class="lbl">折叠轮播</span>
+          </label>
+        </div>
+      </div>
+      <div class="inline">
+        <div class="radio">
+          <label>
+            <input type="radio" class="ace" ng-model="module.displayType" name="displayType"
+                   value="2"><span class="lbl">分开显示</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group clearfix">
+    <label class="col-sm-3 control-label">显示大小：</label>
+
+    <div class="col-sm-8">
+      <div class="radio">
+        <label>
+          <input type="radio" class="ace" ng-model="module.layoutType" name="layoutType"
+                 value="1"><span class="lbl">大图</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <ng-form novalidate name="myform">
+    <div class="form-group clearfix" ng-repeat="ads in module.adsList">
+      <div class="items clearfix">
+        <div class="img-box">
+          <img ng-src="{{ads.file_cdn_path}}" class="thumb-image"/>
+          <a class="upload-img" ng-click="changeAds($index,$event)">重新上传</a>
+        </div>
+        <div class="control-box">
+          <div class="col-sm-2 control-label">文字：
+          </div>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="text{{$index}}" ng-model="ads.text"
+                   placeholder="不能超过60个字符或30个汉字" ng-change="checkText(ads)">
+
+            <p class="width100 margin-top5 red font-size12px margin-bottom5"
+               ng-if="ads.text && !ads.textValid && module.validation">
+              不能超过60个字符或30个汉字</p>
+
+          </div>
+        </div>
+        <div class="control-box">
+          <div class="col-sm-2 control-label">链接：
+          </div>
+          <div class="col-sm-10">
+            <page-link link="ads.link"></page-link>
+            <p class="width100 margin-top5 red font-size12px margin-bottom5"
+               ng-if="!ads.link && module.validation">
+              必填</p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <span class="action add close-modal" title="添加"
+                ng-click="appendAds($index,$event)">+</span>
+          <span class="action delete close-modal" title="删除"
+                ng-click="delAds($index,$event)">×</span>
+        </div>
+      </div>
+    </div>
+  </ng-form>
+  <div class="add-option" ng-click="addAds()">
+    <i class="icon-plus-circle add-btn success align-middle"></i> 添加一个广告 <span class="grey">(图片建议尺寸：640x320像素)</span>
+  </div>
+
+</div>

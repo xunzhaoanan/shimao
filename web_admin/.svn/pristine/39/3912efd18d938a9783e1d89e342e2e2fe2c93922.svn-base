@@ -1,0 +1,39 @@
+<div class="richText_edit padding10">
+  <div class="clearfix">
+    <h4 class="app-m-title">富文本</h4>
+
+    <div class="hr"></div>
+  </div>
+  <div class="clearfix">
+    <div class="form-group inline align-top">
+      <label class="control-label no-padding">背景颜色：</label>
+      <div class="input-append inline no-padding">
+        <div class="colorbox">
+          <input type="text" class="input-small" readonly
+                 style="background-color: {{module.bgColor}} !important; color: transparent !important;"
+                 ng-model="module.bgColor"/>
+          <button class="btn btn-xs btn-default align-top" ng-click="module.bgColor='#FFFFFF';">重置
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="form-group inline align-top margin-top5 padding-left10" >
+      <label class="control-label no-padding">是否全屏：</label>
+      <div class="checkbox inline no-padding align-top">
+        <label>
+          <input name="form-field-checkbox" ng-model="module.isFull" type="checkbox" class="ace">
+          <span class="lbl align-top">全屏显示</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="hr"></div>
+
+  <div class="clearfix">
+    <script id="container" name="content" type="text/plain"></script>
+  </div>
+  <p class="width100 margin-top5 red font-size12px margin-bottom5"
+     ng-if="module.isInit&&module.validation">
+    必填</p>
+
+</div>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+.wx_r_box {
+  width: 80%;
+  float: right;
+}
+.content_form .part_bg {
+  box-shadow: 0 0 6px #ccc;
+  border-radius: 2px;
+  background: #fff;
+  line-height: 30px;
+  position: relative;
+}
+.index_main_box, .jq_index_main_box, .index_tab {
+  border: 1px solid #d1d5d5;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 4px #ebebeb;
+  border-radius: 4px;
+}
+.index_main_box .title, .jq_index_main_box .jq_title, .index_tab .title {
+  background: url('http://imgcache.vikduo.com/static/3a62f749e936c2a8ecf34ddc41aa01b2.jpg') repeat-x;
+  line-height: 39px;
+  border-bottom: 1px #d1d5d5 solid;
+  height: 39px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.index_main_box .title, .jq_index_main_box .jq_title, .index_tab .title {
+  background: url('http://imgcache.vikduo.com/static/3a62f749e936c2a8ecf34ddc41aa01b2.jpg') repeat-x;
+  line-height: 39px;
+  border-bottom: 1px #d1d5d5 solid;
+  height: 39px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.index_main_box .table_box, .jq_index_main_box .jq_table_box, .index_tab .index_tab_content {
+  padding: 20px;
+}
+.control_group {
+  padding: 15px 0;
+}
+.control_group dt, .control_group dd{
+	margin-bottom:10px;
+	}
+dl {
+  width: 100%;
+}
+ul li, ol li, dl dt, dl dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+option {
+  font-weight: normal;
+}
+user agent stylesheetoption {
+  font: inherit;
+}
+user agent stylesheetoption {
+  font-weight: normal;
+  display: block;
+  padding: 0px 2px 1px;
+  white-space: pre;
+  min-height: 1.2em;
+}

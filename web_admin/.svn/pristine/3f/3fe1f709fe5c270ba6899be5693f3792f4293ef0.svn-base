@@ -1,0 +1,28 @@
+<!--商品设置-->
+<div class="custom-goods clearfix ">
+  <div class="goods-panel"
+       ng-class="{'big-goods': module.layoutType === '1', 'small-goods': module.layoutType === '2'}"
+       ng-repeat="goods in module.goodsList">
+    <a ng-href="{{module.prefix}}/product/detail?id={{goods.id}}"
+       class="goods-links">
+      <div ng-class="{ 'p-4 ': module.layoutType === '1',  'p-2 ': module.layoutType === '2'}">
+        <div class="img-box"><img class="good-img" ng-src="{{goods.covers.file_cdn_path}}"/></div>
+        <div class="goods-info clearfix" ng-if="module.showGoodsName || module.showGoodsPrice">
+          <div class="name" ng-if="module.showGoodsName" ng-bind="goods.name"
+               ng-class="{'showprice':module.showGoodsPrice}"></div>
+          <div class="price clearfix" ng-if="module.showGoodsPrice">
+            <span ng-bind="goods.show_price/100 | pricec: '2'"
+                  class="sprice"></span>
+            <span ng-if="module.priceType==1" class="xprice">销量
+              <em ng-bind="goods.sales"></em>
+              <i ng-if="goods.sales>10000"
+                 style="margin: -1px 0 0 -4px; display: inline-block; vertical-align: top">+</i>
+            </span>
+            <span ng-if="module.priceType==2" class="yprice"
+                  ng-bind="goods.productSkus[0].market_price/100 | pricec: '2'"></span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

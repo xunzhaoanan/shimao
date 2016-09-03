@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.step {
+  background: #EEE;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: Arial;
+  color: #999;
+  margin-bottom: 10px;
+}
+.step b.act {
+  background: #297702 url('http://imgcache.vikduo.com/static/e3ab8de1eba2c23a91c45af6f76c1fc4.gif') no-repeat right;
+}
+.step b.act, .step b.ok {
+  color: #FFF;
+}
+.step b {
+  display: inline-block;
+  width: 190px;
+  text-align: center;
+  color: #424040;
+}
+.step b.go {
+  background: #eee url('http://imgcache.vikduo.com/static/e3ab8de1eba2c23a91c45af6f76c1fc4.gif') no-repeat right;
+}

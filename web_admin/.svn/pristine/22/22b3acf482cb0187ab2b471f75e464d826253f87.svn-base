@@ -1,0 +1,94 @@
+.ng-paginate {
+  text-align: center;
+  font-size: 14px !important;
+}
+
+.ng-paginate .pagination {
+  margin: 0;
+}
+
+.ng-paginate .pagination > .pagination-prev > a, .ng-paginate .pagination > .pagination-next > a {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.ng-paginate .pagination > li.disabled > a:hover {
+  background-color: #6faed9 !important;
+  border-color: #6faed9 !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.ng-paginate .pagination > li > a {
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(34, 131, 197) !important;
+  background-color: rgb(34, 131, 197) !important;
+  min-width: 31px;
+  line-height: 27px;
+  height: 32px;
+  padding: 2px 5px;
+  margin: 2px;
+  float: left;
+  text-decoration: none;
+}
+
+.ng-paginate .pagination > li > a:hover {
+  color: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(204, 204, 204) !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.ng-paginate .pagination > li.active > a {
+  color: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(204, 204, 204) !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.pagination .ng-paginate-search > span {
+  padding: 0;
+  border-width: 0;
+  margin: 2px;
+}
+
+.pagination .ng-paginate-search > .text-box {
+  margin-right: -2px;
+  margin-left: 2px;
+}
+
+.pagination .ng-paginate-search > .text-box > input {
+  width: 40px;
+  height: 32px;
+  border: 1px solid rgb(34, 131, 197);
+  text-align: center;
+}
+
+.pagination .ng-paginate-search .btn {
+  height: 32px;
+  padding: 0 4px;
+  border: 1px solid rgb(34, 131, 197);
+  background-color: rgb(34, 131, 197) !important;
+}
+
+.pagination .ng-paginate-search .btn:hover {
+  border: 1px solid rgb(34, 131, 197);
+  background-color: rgb(34, 131, 197) !important;
+}
+
+.pagination .ng-paginate-search > .text {
+  line-height: 32px;
+}
+
+.pagination .ng-paginate-search > .text:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.icon-1:before {
+  content: "\e61d";
+}
+
+.icon-2:before {
+  content: "\e610";
+}
+
+.icon-3:before {
+  content: "\e616";
+}

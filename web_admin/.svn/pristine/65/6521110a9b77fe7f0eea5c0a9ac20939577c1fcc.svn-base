@@ -1,0 +1,29 @@
+<!--公告设置-->
+<div class="padding10 clearfix">
+  <div class="clearfix">
+    <h4 class="app-m-title">公告设置</h4>
+
+    <div class="hr"></div>
+  </div>
+	<ng-form novalidate name="myform">
+  <div class="form-group clearfix">
+
+      <label class="col-sm-3 control-label"><strong class="red">*</strong>公告内容：</label>
+
+      <div class="col-sm-8">
+        <input type="text" required name="contentText" class="form-control" ng-model="contentText"
+               placeholder="不能超过128个字符或64个汉字" ng-change="checkText()"/>
+
+        <p class="width100 margin-top5 red font-size12px margin-bottom5"
+           ng-if="myform.contentText.$error.required && module.validation">
+          必填</p>
+
+        <p class="width100 margin-top5 red font-size12px margin-bottom5"
+           ng-if="contentText && !textValid && module.validation">
+          不能超过128个字符或64个汉字</p>
+
+      </div>
+
+  </div>
+	</ng-form>
+</div>

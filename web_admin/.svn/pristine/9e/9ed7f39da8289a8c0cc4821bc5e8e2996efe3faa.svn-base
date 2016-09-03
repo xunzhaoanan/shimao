@@ -1,0 +1,80 @@
+<div class="dropdown">
+	<div style="position: relative; display: inline-block;" ng-if="link">
+		<span class="label label-success" ng-bind="link.name" title="{{link.name}}"></span>
+		<span class="action delete close-modal" title="删除" ng-click="del($event)">&times;</span>
+	</div>
+	<a id="dLabel" ng-click="showLinkForm=false;" href="javascript:void(0);" data-toggle="dropdown"
+	   role="button" class="inline align-top margin-left5" aria-haspopup="true"
+	   aria-expanded="false">
+		<span ng-if="!link">设置页面链接地址</span>
+		<span ng-if="link">修改</span>
+		<span class="caret"></span>
+	</a>
+
+
+	<ul class="dropdown-menu dropdown-light" aria-labelledby="dLabel">
+		<li data-toggle="popover" ng-repeat="l in linkList">
+			<a class="js-modal-magazine" ng-click="selectedLink(l, $event)" data-type="feature"
+			   href="javascript:void(0);" ng-bind="l.name"></a>
+		</li>
+	</ul>
+
+
+	<div class="popover popover-link-wrap bottom" ng-show="showLinkForm"
+	     style="display: block;top: 15px; left: -80px; ">
+		<div class="arrow"></div>
+		<div class="popover-inner popover-link">
+			<div class="popover-content">
+				<div class="form-inline">
+					<input type="text" class="link-placeholder align-top"
+					       placeholder="链接地址：http://example.com" ng-model="linkHref">
+					<button type="button" class="btn btn-xs btn-primary align-top" ng-click="ok($event)">确定</button>
+					<button type="reset" class="btn btn btn-xs align-top" ng-click="cancel($event)">取消</button>
+					<p class="width100 margin-top5 red font-size12px margin-bottom5"
+					   ng-if="linkError">请输入正确的url地址</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade">
+	<div class="modal-dialog modal-dialog4 ">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+						aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">自定义页面</h4>
+			</div>
+			<div class="modal-body">
+				<table
+						class="table goods-table table-condensed table-bordered table-hover text-center table-width">
+					<thead>
+					<tr>
+						<th width="20%" class="center">页面标题</th>
+						<th width="20%" class="center">分类</th>
+						<th width="10%" class="center">商品数量</th>
+						<th width="10%"  class="center">排序</th>
+						<th width="20%" class="center">创建时间</th>
+						<th width="10%" class="center">操作</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr ng-repeat="page in pageList" class="font-size14px">
+						<td class="center text-overflow" ng-bind="page.title"></td>
+						<td class="center text-overflow" ng-bind="page.cpCategory.name"></td>
+						<td class="center text-overflow" ng-bind="page.product_num"></td>
+						<td class="center text-overflow" ng-bind="page.sort"></td>
+						<td class="center" ng-bind="page.created*1000 | date:'yyyy-MM-dd HH:mm:ss'"></td>
+						<td class="center">
+							<button class="btn btn-xs btn-primary" ng-click="selectedPage(page);">选中</button>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="text-center pageListPager"></div>
+			</div>
+		</div>
+	</div>
+</div>

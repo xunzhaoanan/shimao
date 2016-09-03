@@ -1,0 +1,47 @@
+<!--文本导航-->
+<div class="text-navset control-com padding10 clearfix">
+  <div class="clearfix">
+    <h4 class="app-m-title">文本导航</h4>
+
+    <div class="hr"></div>
+  </div>
+
+  <ng-form novalidate name="myform">
+    <div class="text-items com-items clearfix" ng-repeat="nav in module.navList">
+      <div class="form-group">
+        <label class="col-sm-3 control-label">导航名称：</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="text{{$index}}" required ng-model="nav.text"
+                 placeholder="不能超过60个字符或30个汉字" ng-change="checkText(nav)">
+
+          <p class="width100 margin-top5 red font-size12px margin-bottom5"
+             ng-if="myform['text'+$index].$error.required && module.validation">
+            必填</p>
+
+          <p class="width100 margin-top5 red font-size12px margin-bottom5"
+             ng-if="nav.text && !nav.textValid && module.validation">
+            不能超过60个字符或30个汉字</p>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">链接：</label>
+        <div class="col-sm-7">
+          <page-link link="nav.link"></page-link>
+          <p class="width100 margin-top5 red font-size12px margin-bottom5"
+             ng-if="!nav.link && module.validation">
+            必填</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <span class="action add close-modal" title="添加" ng-click="addNav($index,$event)">+</span>
+        <span class="action delete close-modal" title="删除" ng-click="delNav($index,$event)">×</span>
+      </div>
+    </div>
+  </ng-form>
+  <div class="add-option" ng-click="addNav(undefined,$event)">
+    <i class="icon-plus-circle add-btn success align-middle"></i>添加一个文本导航
+  </div>
+</div>

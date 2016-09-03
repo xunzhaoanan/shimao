@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body{background:#F6F1EB}
+.d_header nav { background-color:rgba(119,190,48,0.8);border-bottom:1px #77BE30 solid}
+.header_region{ background-color:rgba(119,190,48,0.8);border-top:1px #77BE30 solid}
+.initial_nav li span,.class_nav li i{ color:#FFF}
+
+.payment_box {background:rgba(255,255,255,0.9) }
+.d_header nav i,.filter li.filter_cur a{color:#FFF;}
+.h_cart a em{background:#77BE30;}
+.filter li.filter_cur a{background: #77BE30;}
+
+.goods_show .goods_title h2{color:#77BE30;}
+.d_header nav h1 { color:#FFF }
+.filter a{color:#333}
+.filter .filter_cur a{color:#fff}
+.class_nav li a:hover span, .class_nav li a:hover i , .class_nav li a.act i, .class_nav li a.act span{color:#FFF}
+.class_nav li a.act{background: #77BE30;}
+
+.items_defray .items label.select,.ui_sku label.btn_opt{background:#77BE30;border-color:#77BE30;}
+.scroll_top i{color: #FFF;}
+#pagenavi a{background:#FFF;background-color:rgba(255,255,255,0.7);}
+
+
+.list_font li{background: #77BE30; -webkit-background-clip: content; -moz-background-clip: content; background-clip: content; text-align: center; color:#fff;}
+.home_warp{}
+
+.list_font i[class^="icon"]{color:#fff;}
+.list_font li span i{color:#fff;}
+
+
+/*商城*/
+.list_font{ display: none;}
+/**************模版样式*****************/
+.home_block{ margin:10px; width:auto; padding:0;}
+.home_block .pic{ display:none;} 
+.home_block li {background: none repeat scroll 0 0 rgba(144, 156, 159, 0.6);
+    border-radius: 5px;
+    color: #666;
+    display: block;
+    font-size: 45px;
+    height: 100px;
+	width: 30%;
+	padding:0;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.home_block .box{color:#fff;}
+.home_block .figure > i:before{ font-size:45px; color:#fff; line-height:normal;}
+.home_block .figure{ width:100%; height:50px; position:absolute; bottom:10px; left:0;}
+.home_block .describe{height:auto; position:absolute; top:0; left:0; text-align: left; margin:0 8px 8px 8px ;}
+.home_block .describe i{ font-size:1.4rem; vertical-align:top;} 

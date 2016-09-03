@@ -1,0 +1,40 @@
+
+
+/*现金红包*/
+.CashRedpackAdd .control_group2{ width:auto;}
+.CashRedpackAdd .preview_box{ position:relative;}
+.CashRedpackAdd .preview{float: right;margin-right: 20px;position: relative;width: 250px;}
+.CashRedpackAdd .t{ position:relative;}
+.CashRedpackAdd .t img{ width:250px;}
+.CashRedpackAdd .preview_t a{background:#ebebeb;color: #333;cursor: pointer;display: inline-block;height: 30px;line-height: 30px;
+  text-align: center;text-decoration: none;width: 50%;}
+.CashRedpackAdd .preview_t a.cur{ background:#999; color:#fff;}
+.CashRedpackAdd .preview_box .tit{color: #fff;font-size: 12px;left: 0;line-height:30px;margin: 0 auto;position: absolute;right: 0;
+  text-align: center;top:20px;width: 80%;}
+.CashRedpackAdd .m{ margin:15px; padding:15px 15px 0 15px; background:#fff; border-radius:5px; border:1px solid #ddd;}
+.CashRedpackAdd .m p{ line-height:20px; padding-bottom:10px; color:#666;}
+.CashRedpackAdd .m .intr{ color:#999;}
+.CashRedpackAdd .m .c57{ color:#57b800;}
+.CashRedpackAdd .m strong{display:block; font-size:14px; color:#464646;}
+.CashRedpackAdd .m .date{color:#999;}
+.CashRedpackAdd .d{ height:36px; line-height:36px; color:#666; border-top:1px solid #ddd;}
+.CashRedpackAdd .d em{ font-family:consolas; font-style:normal; font-size:16px; float:right;}
+.CashRedpackAdd .f{ position:absolute; left:0; bottom:0;}
+.CashRedpackAdd .f img{ width:250px;}
+.CashRedpackAdd .first{background:#f7f7f7; height:420px; position:relative; }
+.CashRedpackAdd .second{ position: relative; height:420px;}
+.CashRedpackAdd .second_bg{ background:rgba(0,0,0,.5); position:absolute;top:0;right:0;bottom:0;left:0; z-index:9;}
+.CashRedpackAdd .second_bg img{margin: 0 auto;padding:70px 20px 0;width:250px;}
+.CashRedpackAdd .second_c{ color:#fff; padding-top:52px; width:250px; margin:0 auto; position: relative; z-index:10; text-align:center;}
+.CashRedpackAdd .second_c img{ width:40px; height:40px; border-radius:50%;}
+.CashRedpackAdd .second_c strong{ font-size:16px; padding-top:10px; font-weight:normal; display:block;}
+.CashRedpackAdd .second_c span{ font-size:14px; display: block; }
+.CashRedpackAdd .second_c span.gray{ color: #bfbfbf; font-size: 12px;}
+.CashRedpackAdd .thirdly{ height:100%;}
+.CashRedpackAdd .thirdly .pic{background:#f7f7f7; margin:0 auto 10px; padding:20px 0; text-align:center;border:1px dashed #bbb; }
+.CashRedpackAdd .sc{background:#f7f7f7;border:1px dashed #bbb; padding:15px;}
+.CashRedpackAdd .sc_box{ padding:10px; background:#fff;}
+.CashRedpackAdd .sc img{ width:60px; height:60px; float:left;}
+.CashRedpackAdd .sc span{ padding-left:70px; display:block;}
+.CashRedpackAdd .preview_f{ background:#ebebeb ; padding:10px;}
+.CashRedpackAdd .preview_f h5{ font-size:14px;}

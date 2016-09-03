@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body{background:#F5F0EC;}
+.d_header nav { background-color:rgba(219,80,15,0.8);border-bottom:1px #DB500F solid}
+.header_region{ background-color:rgba(219,80,15,0.8);border-top:1px #DB500F solid}
+.initial_nav li span,.class_nav li i{ color:#FFF}
+
+.payment_box {background:rgba(255,255,255,0.9) }
+.d_header nav i,.filter li.filter_cur a{color:#FFF;}
+
+.filter li.filter_cur a{background: #DB500F;}
+
+.goods_show .goods_title h2{color:#DB500F;}
+.d_header nav h1 { color:#FFF }
+.filter a{color:#333}
+.class_nav li a:hover span, .class_nav li a:hover i , .class_nav li a.act i, .class_nav li a.act span{color:#FFF}
+.class_nav li a.act{background: #DB500F;}
+
+.items_defray .items label.select,.ui_sku label.btn_opt{background:#DB500F;border-color: #DB500F;}
+.refer_infor .con_refer,.buy_btn,#pagenavi a.active{background: #333;}
+.scroll_top i{color: #FFF;}
+#pagenavi a{background:#FFF;background-color:rgba(255,255,255,0.7);}
+
+.list_font{padding: 2%;}
+.list_font span{ font-size:16px}
+.list_font span:first-child{ margin-top:7%;}
+.list_font span:last-child{margin-bottom:7%;}
+.list_font li{ width:49%;margin:0%; margin-bottom:10px;}
+.list_font li{background: #CFB676; -webkit-background-clip: content; -moz-background-clip: content; background-clip: content; text-align: center;}
+.list_font li:nth-child(2n){float:right;background:#96A795}
+.list_font li:nth-child(3n){background:#F46B41}
+.list_font li:nth-child(4n){float:right;background:#BD96CB}
+.list_font li a img{ display:none;}
+.list_font i[class^="icon"]{color:#FFF; height:90px; width:auto; font-size:80px;}
+
+.list_font span{color:#FFF;}
+
+/**************官网模版样式*****************/
+.main_home_css{ background-image:none; background-color:#E8E8E8;}
+.home_block{overflow: hidden; width:auto; margin:0;padding:20px;}
+.home_block li{ background:#fff;text-align: center;width:100%; padding:0; margin-bottom:20px; box-shadow:0 0 10px #999;}
+.home_block li a{display: block;font-size:1.6rem;}
+.home_block li img{display:inline-block;overflow:hidden; width:100%;}
+.home_block .box{ background:none; color:#333;}
+.home_block .figure{ display:none;}
+.home_block .describe{ height:40px; line-height:40px;}

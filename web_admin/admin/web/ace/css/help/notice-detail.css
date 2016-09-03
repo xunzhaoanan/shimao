@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.container_fluid {
+  padding: 15px;
+}
+.cont_title {
+  display: block;
+  margin: 0px 0 13px 0;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cont_title h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-family: "Microsoft Yahei";
+  color: #333;
+  display: inline;
+  border: 0 none;
+}
+.order_top, h2 {
+  border: 1px solid #ebebeb;
+  margin-bottom: 10px;
+  line-height: 22px;
+  font-size: 14px;
+}
+

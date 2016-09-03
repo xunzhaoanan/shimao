@@ -1,0 +1,113 @@
+@charset "utf-8";
+/*
+body{background:#F6F1EB}
+.d_header nav { background-color:rgba(219,80,15,0.8);border-bottom:1px #DB500F solid}
+.header_region{ background-color:rgba(219,80,15,0.8);border-top:1px #DB500F solid}
+.initial_nav li span,.class_nav li i{ color:#FFF}
+
+.payment_box {background:rgba(255,255,255,0.9) }
+.foot_cart a {color:#FFF}
+.d_header nav i,.filter li.filter_cur a{color:#FFF;}
+
+.filter li.filter_cur a{background: #DB500F;}
+
+.goods_show .goods_title h2{color:#DB500F;}
+.d_header nav h1 { color:#FFF }
+.filter a{color:#FFF}
+.class_nav li a:hover span, .class_nav li a:hover i , .class_nav li a.act i, .class_nav li a.act span{color:#FFF}
+.class_nav li a.act{background: #DB500F;}
+
+.items_defray .items label.select,.ui_sku label.btn_opt{background:#DB500F;border-color: #DB500F;}
+.refer_infor .con_refer,.buy_btn,#pagenavi a.active{background: #333;}
+.scroll_top i{color: #FFF;}
+#pagenavi a{background:#FFF;background-color:rgba(255,255,255,0.7);}
+*/
+
+.list_font a:nth-child(2n){display:none;}
+.list_font li{width: 31%;}
+
+.home_block{ padding:0;}
+.home_block .pic{ display:none;}
+.home_block .figure{ display: none;}
+.home_block  .describe{
+    background:rgba(255,255,255,0.6);
+    display:block;
+    width:100%;
+    color:#393939;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding:0 5px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+	height:45px;
+	line-height:45px;
+}
+.home_block  .box{
+	background:none;
+    display: block;
+    position:relative;
+    margin-right:5px;
+    margin-bottom:5px;
+	line-height:normal;
+}
+
+.home_block {
+    text-align:center;
+    width:60%;
+    margin:120px auto 20px;
+}
+.home_block  li{
+	padding:0;
+    line-height:45px;
+    width:50%;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    float:left;
+	transition:all .5s ease;
+    -webkit-transition:all .5s ease;
+}
+.home_block li:nth-child(2n+1) {
+	animation:animate1 .5s ease-in;
+    -webkit-animation:animate1 .5s ease-in;
+	
+}
+.home_block li:nth-child(2n) {
+	animation:animate2 .5s ease-in;
+    -webkit-animation:animate2 .5s ease-in;
+}
+
+@-moz-keyframes animate1 {
+    0% {
+        transform:translate(-300px,-100px);
+    }
+    100% {
+        transform:translate(0,0)
+    }
+}
+
+@-webkit-keyframes animate1 {
+    0% {
+        -webkit-transform:translate(-300px,-100px);
+    }
+    100% {
+        -webkit-transform:translate(0,0)
+    }
+}
+
+@-moz-keyframes animate2 {
+     0% {
+         transform:translate(300px,-100px)
+     }
+     100% {
+         transform:translate(0,0)
+     }
+ }
+ @-webkit-keyframes animate2 {
+     0% {
+         -webkit-transform:translate(300px,-100px)
+     }
+     100% {
+         -webkit-transform:translate(0,0)
+     }
+ }

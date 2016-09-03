@@ -1,0 +1,55 @@
+<?php
+
+return [
+    'id' => 'app-admin',
+    'basePath' => dirname(__DIR__),
+    'controllerNamespace' => 'admin\controllers',
+    'bootstrap' => ['log'],
+    'defaultRoute' => 'site/index',
+    'modules' => [],
+    'language' => 'zh-CN',
+    'components' => [
+        'request' => [
+            'cookieValidationKey' => '4JPLXWzZG5fMhe-dkrgC07JLwHuoreIW',
+        ],
+        'user' => [
+            'identityClass' => 'admin\models\User',
+            'enableAutoLogin' => true,
+        ],
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning'],
+                ],
+            ],
+        ],
+        'errorHandler' => [
+            'errorAction' => 'site/error',
+            'errorView' => '@yii/views/errorHandler/error.php',
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+                // 'admin/<controller:[\w-]+>/<action:[\w-]+>' => '<controller>/<action>',  //添加 admin 前缀
+            ]
+        ],
+        'i18n' => [
+            'translations' => [
+                'admin*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@admin/messages',
+                    'fileMap' =>[
+                        'exception' => 'exception.php',
+                    ],
+                ],
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                ],
+            ],
+        ],
+    ],
+];

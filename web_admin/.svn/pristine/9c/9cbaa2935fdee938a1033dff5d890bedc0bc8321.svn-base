@@ -1,0 +1,10 @@
+<!--进入店铺-->
+<div class="custom-combox">
+  <div class="custom-shop clearfix">
+    <a ng-href="{{module.prefix}}{{module.shopInfo.url}}" class="custom-shop-link clearfix">
+      <i class="custom-shop-icon icon-shop"></i>
+      <span class="custom-shop-name" ng-bind="module.shopInfo.name"></span>
+      <span class="custom-shop-enter">进入店铺&nbsp;<span class="icon arrow-right"></span></span>
+    </a>
+  </div>
+</div>

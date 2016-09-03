@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body{background:#F5F0EC;}
+.d_header nav { background-color:rgba(219,80,15,0.8);border-bottom:1px #DB500F solid}
+.header_region{ background-color:rgba(219,80,15,0.8);border-top:1px #DB500F solid}
+.initial_nav li span,.class_nav li i{ color:#FFF}
+
+.payment_box {background:rgba(255,255,255,0.9) }
+.d_header nav i,.filter li.filter_cur a{color:#FFF;}
+
+.filter li.filter_cur a{background: #DB500F;}
+
+.goods_show .goods_title h2{color:#DB500F;}
+.d_header nav h1 { color:#FFF }
+.filter a{color:#333}
+.class_nav li a:hover span, .class_nav li a:hover i , .class_nav li a.act i, .class_nav li a.act span{color:#FFF}
+.class_nav li a.act{background: #DB500F;}
+
+.items_defray .items label.select,.ui_sku label.btn_opt{background:#DB500F;border-color: #DB500F;}
+.scroll_top i{color: #FFF;}
+#pagenavi a{background:#FFF;background-color:rgba(255,255,255,0.7);}
+
+.list_font{padding: 2%;}
+.list_font span{ font-size:16px}
+.list_font span:first-child{ margin-top:7%;}
+.list_font span:last-child{margin-bottom:7%;}
+.list_font li{ width:49%;margin:0%; margin-bottom:10px;}
+.list_font li{background: #CFB676; -webkit-background-clip: content; -moz-background-clip: content; background-clip: content; text-align: center;}
+.list_font li:nth-child(2n){float:right;background:#96A795}
+.list_font li:nth-child(3n){background:#F46B41}
+.list_font li:nth-child(4n){float:right;background:#BD96CB}
+.list_font li a img{ display:none;}
+.list_font i[class^="icon"]{color:#FFF; height:90px; width:auto; font-size:80px;}
+
+.list_font span{color:#FFF;}
+
+.home_block{width:280px;margin:10px auto; padding:0 0 0 40px;}
+.home_block li{float:left;box-sizing: border-box;-moz-box-sizing:border-box;padding:5px;width:120px;height:120px;background-color:rgba(23, 152, 219, 0.85); -webkit-background-clip:content;}
+.home_block .pic{ display:none;}
+.home_block li:nth-of-type(4n+1){ background-color:rgba(250, 103, 32, 0.85);}
+.home_block li:nth-of-type(4n){ background-color:rgba(250, 103, 32, 0.85);}
+.home_block li .box{ background:none; width:100%; height:100%; display:inline-block; line-height:normal;}
+.home_block li a{color:#fff;}
+.home_block span{ display:block; text-align:center;}
+.home_block .figure { margin-bottom: 5px;margin-top: 20px; height:auto;}
+.home_block .figure i{ font-size:3rem;}
+.home_block .describe{ font-size:1.6rem; color:#fff; height:auto; line-height:normal;}
+.home_block .figure > i:before{ color:#fff; font-size:3rem; line-height:1;}

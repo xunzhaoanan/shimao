@@ -1,0 +1,87 @@
+/*.hy-cs-items{*/
+  /*display: inline-block;*/
+  /*padding: 0 30px;*/
+  /*margin:50px 0 0 ;*/
+/*}*/
+/*.hy-cs-item{*/
+  /*float:left;*/
+  /*width: 100px;*/
+  /*height: 104px;*/
+  /*margin-right:92px;*/
+  /*position: relative;*/
+  /*border-radius: 5px;*/
+  /*border:1px solid #cdcdcd;*/
+/*}*/
+/*.hy-cs-item:after{*/
+  /*content: '';*/
+  /*width: 92px;*/
+  /*height: 11px;*/
+  /*position: absolute;*/
+  /*top:50%;*/
+  /*margin-top:-5px;*/
+  /*right: -93px;*/
+  /*background: url("http://imgcache.vikduo.com/static/f45cfe9ad1ea7d50f701e280d3bab92c.png") 10px -31px  no-repeat;*/
+/*}*/
+/*.hy-cs-item:last-child{*/
+  /*margin-right: 0;*/
+/*}*/
+/*.hy-cs-item:last-child:after{*/
+  /*display: none;*/
+/*}*/
+/*.hy-cs-item .num{*/
+  /*width:30px;*/
+  /*height: 30px;*/
+  /*border-radius: 30px;*/
+  /*line-height: 26px;*/
+  /*text-align: center;*/
+  /*background-color: #1dc725;*/
+  /*border:1px solid #fff;*/
+  /*position: absolute;*/
+  /*left: 50%;*/
+  /*top:-15px;*/
+  /*margin:0 0 0 -15px;*/
+  /*color: #fff;*/
+  /*font-size: 20px;*/
+/*}*/
+/*.hy-cs-item .text {*/
+  /*width:48px;*/
+  /*margin:25px auto 0;*/
+  /*text-align: center;*/
+  /*font-size: 16px;*/
+  /*color:#464646;*/
+  /*line-height: 20px;*/
+/*}*/
+/*.hy-cs-link{*/
+  /*display: block;*/
+  /*width: 100px;*/
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*bottom:-30px;*/
+  /*text-align: center;*/
+  /*font-size: 14px;*/
+/*}*/
+/*.hy-cs-item.on{*/
+  /*background-color: #1dc725;*/
+/*}*/
+/*.hy-cs-item.on .text{*/
+  /*color:#fff;*/
+/*}*/
+/*.hy-cs-item .icon{*/
+  /*display: inline-block;*/
+  /*width: 25px;*/
+  /*height: 18px;*/
+  /*margin: 10px auto 0;*/
+  /*background: url("http://imgcache.vikduo.com/static/f45cfe9ad1ea7d50f701e280d3bab92c.png") no-repeat;*/
+/*}*/
+/*.hy-cs-item .icon.ok{*/
+  /*background-position: 0 0;*/
+/*}*/
+/*.hy-cs-item .icon.no{*/
+  /*background-position: -50px 0;*/
+/*}*/
+/*.hy-cs-item.on .hy-cs-link{*/
+  /*display: none;*/
+/*}*/
+/*.hy-cs-item.on:after{*/
+  /*background-position: 10px -48px;*/
+/*}*/

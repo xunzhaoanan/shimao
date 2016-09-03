@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.minh {
+  padding: 50px 0;
+  text-align: center;
+}
+.tips_text {
+  clear: both;
+  font-size: 12px;
+  color: #999;
+}
+.tips_mod {
+  line-height: 22px;
+  height: 22px;
+  border: 1px solid #eacaa5;
+  display: inline-block;
+  padding: 0 5px 0 26px;
+  font-size: 12px;
+  color: #ff384b;
+  background: url(//imgcache.qq.com/vipstyle/bcenter/img/icons_tips_waring.png?max_age=19830212&d=20140409161830) no-repeat scroll 4px 2px #fffae3;
+  margin: 0 0 0 8px;
+}
+.tips_txt {
+  text-align: left;
+  margin-left: 260px;
+}

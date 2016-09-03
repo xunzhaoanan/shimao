@@ -1,0 +1,14 @@
+<div class="custom-combox">
+  <div class="custom-textnav clearfix" ng-if="!module.navList.length">
+    点此添加一个『文本导航』&nbsp;<span class="custom-textnav-enter"><span
+      class="icon arrow-right"></span></span>
+  </div>
+
+  <div class="custom-textlink" ng-if="module.navList.length">
+    <a class="items" ng-href="{{nav.link.isOut?'':module.prefix}}{{nav.link.url}}" ng-repeat="nav in module.navList">
+      <span class="custom-textnav_text" ng-bind="nav.text"></span>
+      <span class="custom-textnav-enter"><i class="icon arrow-right"></i></span>
+      <hr class="hr hr-2" ng-if="module.navList.length"/>
+    </a>
+  </div>
+</div>

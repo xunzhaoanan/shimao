@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body{background:#F6F1EB}
+.d_header nav { background-color:rgba(119,190,48,0.8);border-bottom:1px #77BE30 solid}
+.header_region{ background-color:rgba(119,190,48,0.8);border-top:1px #77BE30 solid}
+.initial_nav li span,.class_nav li i{ color:#FFF}
+
+.payment_box {background:rgba(255,255,255,0.9) }
+.d_header nav i,.filter li.filter_cur a{color:#FFF;}
+.h_cart a em{background:#77BE30;}
+.filter li.filter_cur a{background: #77BE30;}
+
+.goods_show .goods_title h2{color:#77BE30;}
+.d_header nav h1 { color:#FFF }
+.filter a{color:#333}
+.class_nav li a:hover span, .class_nav li a:hover i , .class_nav li a.act i, .class_nav li a.act span{color:#FFF}
+.class_nav li a.act{background: #77BE30;}
+
+.items_defray .items label.select,.ui_sku label.btn_opt{background:#77BE30;border-color:#77BE30;}
+.scroll_top i{color: #FFF;}
+#pagenavi a{background:#FFF;background-color:rgba(255,255,255,0.7); border-radius:0; }
+
+
+.list_font li{ width:100%;margin:0%; margin-bottom:10px; position:relative;}
+.list_font li{background: #77BE30; -webkit-background-clip: content; -moz-background-clip: content; background-clip: content; text-align: center;}
+.list_font li:nth-child(2n){float:right;background:#E76740}
+.list_font li:nth-child(2n) a{float:right;}
+.list_font li a{}
+.list_font li a:first-child{ width:60%}
+.list_font li a:last-child{ width:40%;}
+.list_font li:nth-child(2n+1) a:last-child span:first-child{ position:absolute;bottom:0; left:90%;}
+.list_font li:nth-child(2n+1) a:last-child span:last-child{ font-size:2rem;font-weight: normal; width:15%;left: 61%;line-height:2rem; margin: 0;padding: 0 4%; position: absolute;text-align: left;top:10px; font-weight:normal;}
+.list_font li:nth-child(2n+2) a:last-child span:first-child{ position:absolute;bottom:0; left:28%;}
+.list_font li:nth-child(2n+2) a:last-child span:last-child{ font-size:2rem;font-weight: normal; width:15%;left:0;line-height:2rem; margin: 0;padding: 0 4%; position: absolute;text-align: left;top:10px; font-weight:normal;}
+.list_font li a span{font-size:21px; color:#FFF}
+.list_font i[class^="icon"]{color:#FFF}
+
+.list_font span{color:#FFF;}
+
+.home_block{ background:rgba(255,255,255,0); padding:60% 10px 10px 10px; margin:0; width:auto;}
+.home_block li{ width:33.33%; float:left; display:block; padding:0;}
+.home_block li .pic{ display: none;}
+.home_block li:nth-of-type(2n) {background:#cfcfcf;}
+.home_block li:nth-of-type(2n+1) {background:#e8e8e8;}
+.home_block .box{ background:none; line-height:normal;}
+.home_block li .figure{height: 80px; display:block; text-align:center;}
+.home_block .figure > i:before{color: #666;font-size:50px;height: 80px;line-height:80px;}
+.home_block li .describe{ display:block;font-size: 100%;font-weight: normal;height: 20%;padding-bottom: 10px;text-align: center;line-height:normal; color:#333;}
+

@@ -1,0 +1,157 @@
+<style>
+  .chooseProduct select {
+    white-space: nowrap;
+    border: 1px solid #d5d5d5;
+  }
+</style>
+<!--商品设置-->
+<div class="add-goods-box padding10">
+  <div class="clearfix">
+    <h4 class="app-m-title">商品设置</h4>
+
+    <div class="hr"></div>
+  </div>
+  <div class="form-group clearfix">
+    <label class="col-sm-3 control-label">选择商品：</label>
+
+    <div class="col-sm-8">
+      <div ng-sortable="sortOptions">
+        <div ng-repeat="goods in selectedGoods" class="goods-item">
+          <div class="img-box">
+            <img ng-src="{{goods.covers.file_cdn_path}}"/>
+            <a class="delGoods" ng-click="delGoods($index, goods)">&times;</a>
+          </div>
+        </div>
+      </div>
+      <div class="goods-item">
+        <div ng-click="showGoodsList()" class="add-goods text-center">
+          <span class="icon-plus-circle add-btn success"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group clearfix">
+    <label class="col-sm-3 control-label">列表样式：</label>
+
+    <div class="col-sm-8">
+      <div class="radio inline">
+        <label>
+          <input type="radio" class="ace" ng-model="module.layoutType" name="layoutType"
+                 value="1"><span class="lbl">大图</span>
+        </label>
+      </div>
+      <div class="radio inline">
+        <label>
+          <input type="radio" class="ace" ng-model="module.layoutType" name="layoutType"
+                 value="2"><span class="lbl">小图</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group clearfix">
+    <label class="col-sm-3 control-label"></label>
+
+    <div class="col-sm-8 goodclass-list">
+      <div>
+        <div class="radio">
+          <label>
+            <input type="radio" class="ace" name="displayMode" value="1" checked><span class="lbl">卡片样式</span>
+          </label>
+        </div>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="ace" type="checkbox" ng-model="module.showGoodsName"><span
+            class="lbl">显示商品名</span>
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="ace" type="checkbox" ng-model="module.showGoodsPrice"><span
+            class="lbl">显示价格</span>
+        </label>
+        <label ng-show="module.showGoodsPrice">
+          <input class="ace" type="radio" value="1" name="sales" ng-model="module.priceType"
+                 title="将在自定义页面的列表中，展示该商品的总销量。">
+          <span class="lbl">总销量</span>
+        </label>
+        <label ng-show="module.showGoodsPrice">
+          <input class="ace" type="radio" value="2" name="sales" ng-model="module.priceType"
+                 title="将在自定义页面的列表中，展示该商品第一个规格的原价。">
+          <span class="lbl">市场价</span>
+        </label>
+        <label ng-show="module.showGoodsPrice">
+          <input class="ace" type="radio" value="3" name="sales" ng-model="module.priceType"
+                 title="将在自定义页面的列表中，不展示该商品的总销量或原价。">
+          <span class="lbl">不展示</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="goodsListPanel" class="modal fade in" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog4 ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">已上架商品</h4>
+        </div>
+        <div class="modal-body shop-good">
+          <div class="margin-bottom10 text-right chooseProduct">
+            <select class="width120" ng-model="fCategory" ng-change="getSecond()">
+              <option value="{{i.id}}" ng-bind="i.name" ng-repeat="i in fCategorySelect"
+                      ng-selected="i.id==fCategory"></option>
+            </select>
+            <select class="width120" ng-model="sCategory" ng-change="getThree()"
+                    ng-disabled="fCategory==''||sCategorySelect.length===1">
+              <option value="{{i.id}}" ng-bind="i.name" ng-repeat="i in sCategorySelect"
+                      ng-selected="i.id==sCategory"></option>
+            </select>
+            <select class="width120" ng-model="tCategory"
+                    ng-disabled="sCategory==''||tCategorySelect.length===1">
+              <option value="{{i.id}}" ng-bind="i.name" ng-repeat="i in tCategorySelect"
+                      ng-selected="i.id==tCategory"></option>
+            </select>
+            <input class="inline text-muted width-250px" placeholder="搜索商品名称" type="text"
+                   ng-model="goodsName">
+            <span class="inline align-top">
+              <a ng-click="query()" class="btn btn-xs btn-primary align-top">
+                <i class="icon-search icon-on-right bigger-100"></i>
+              </a>
+            </span>
+          </div>
+          <table class="table goods-table table-bordered table-hover font-size12 table-width">
+            <thead>
+            <tr>
+              <th style="width: 12%;" class="text-center">商品图片</th>
+              <th>商品名</th>
+              <th style="width: 20%;">商品分类</th>
+              <th style="width: 12%;" class="text-center">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="goods in goodsList">
+              <td class="text-center"><img ng-src="{{goods.covers.file_cdn_path}}"
+                                           style="width: 50px; height: 50px;"></td>
+              <td class="text-overflow" ng-bind="goods.name"></td>
+              <td class="text-overflow" ng-bind="goods.productCategory.name"></td>
+              <td class="text-center">
+                <button class="btn btn-xs btn-primary"
+                        ng-class="{'active':goods.isSelected}"
+                        ng-click="selectGoods(goods)">
+                  <span ng-if="goods.isSelected">取消</span>
+                  <span ng-if="!goods.isSelected">确定</span>
+                </button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <div id="pageListPager"></div>
+        </div>
+        <div class="modal-footer" style="margin-top: 0;">
+          <button type="button" class="btn btn-primary" ng-click="isOk()">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

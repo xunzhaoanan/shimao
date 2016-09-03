@@ -1,0 +1,35 @@
+<?php
+/**
+ * Author: LiuPing
+ * Date: 2015/06/29
+ * Time: 15:19
+ */
+
+namespace common\forms\redpack;
+
+use common\forms\BaseForm;
+
+/**
+ * @package common\forms
+ */
+class EditActivityRulesForm extends BaseForm
+{
+    public $id;
+    public $name;
+    public $expire_type;
+    public $start_time;
+    public $end_time;
+    public $sort;
+    public $desc;
+    public $deleted;
+    public $share_type;
+
+    public function rules()
+    {
+        return [
+            [['id'], 'required'],
+            [['deleted', 'share_type'], 'integer', 'min' => 1],
+            [['id', 'sort', 'expire_type', 'start_time', 'end_time','name', 'desc'], 'safe']
+        ];
+    }
+}
